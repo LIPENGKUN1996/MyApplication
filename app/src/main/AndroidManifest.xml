@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lipengku.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/g"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Welcome"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ToobarClick.Home"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ToobarClick.QLtougao"></activity>
+        <activity android:name=".ToobarClick.FBliucheng"></activity>
+        <activity android:name=".ToobarClick.GYwomen"></activity>
+        <activity android:name=".ToobarClick.Add"></activity>
+    </application>
+
+</manifest>

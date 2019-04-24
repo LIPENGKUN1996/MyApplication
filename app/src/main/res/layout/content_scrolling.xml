@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lipengku.myapplication.AppBar.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.example.lipengku.myapplication.view.ImageBarnnerFrameLayout
+        android:id="@+id/image_group"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+    </com.example.lipengku.myapplication.view.ImageBarnnerFrameLayout>
+    <com.example.lipengku.myapplication.Menu.DropDownMenu
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textUnSelectColor = "@color/colorPrimary"
+        app:textSelectColor = "@color/colorAccent"
+        app:dividerColor = "@color/colorAccent"
+        app:underlineColor = "@color/colorPrimary"
+        app:menuSelectIcon = "@drawable/up"
+        app:menuUnSelectIcon = "@drawable/down"
+        app:maskColor = "@color/colorPrimary"
+        app:menuBackgroundColor = "@color/colorPrimary"
+        >
+
+    </com.example.lipengku.myapplication.Menu.DropDownMenu>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

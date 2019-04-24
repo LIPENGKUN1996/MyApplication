@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <com.example.lipengku.myapplication.Menu.DropDownMenu
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/dropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textUnSelectColor = "@color/colorPrimary"
+            app:textSelectColor = "@color/colorAccent"
+            app:dividerColor = "@color/colorAccent"
+            app:underlineColor = "@color/colorPrimary"
+            app:menuSelectIcon = "@drawable/up"
+            app:menuUnSelectIcon = "@drawable/down"
+            app:maskColor = "@color/colorPrimary"
+            app:menuBackgroundColor = "@color/colorPrimary"
+            >
+
+        </com.example.lipengku.myapplication.Menu.DropDownMenu>
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+</LinearLayout>
